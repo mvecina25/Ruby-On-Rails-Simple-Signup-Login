@@ -13,7 +13,7 @@
       <div id="user-navigation">
         <ul class="wat-cf">
           <li><%= session[:user_name]%></li>
-          <li><a href="#"><%= t("web-app-theme.settings", :default => "Settings") %></a></li>
+          <!-- <li><a href="#"><%= t("web-app-theme.settings", :default => "Settings") %></a></li> -->
           <li><a href= <%= sessions_destroy_path %> class="logout">Logout</a></li>
         </ul>
       </div>

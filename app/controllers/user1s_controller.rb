@@ -11,6 +11,7 @@ class User1sController < ApplicationController
   # GET /user1s/1
   # GET /user1s/1.json
   def show
+    @user1 = User1.find(params[:id])
   end
 
   # GET /user1s/new
@@ -20,6 +21,7 @@ class User1sController < ApplicationController
 
   # GET /user1s/1/edit
   def edit
+    @user1 = User1.find(params[:id])
   end
 
   # POST /user1s
@@ -42,6 +44,7 @@ class User1sController < ApplicationController
   # PATCH/PUT /user1s/1.json
   def update
     respond_to do |format|
+      @user1 = User1.find(params[:id])
       if @user1.update(user1_params)
         format.html { redirect_to user1s_url, notice: "User #{@user1.name} was successfully updated." }
         format.json { head :no_content }
@@ -55,7 +58,8 @@ class User1sController < ApplicationController
   # DELETE /user1s/1
   # DELETE /user1s/1.json
   def destroy
-    @user1.destroy
+    @user1 = User1.new(user1_params).delete
+    @user1.delete
     respond_to do |format|
       format.html { redirect_to user1s_url }
       format.json { head :no_content }

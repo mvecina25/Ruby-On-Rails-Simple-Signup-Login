@@ -7,6 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Liy::Application.routes.draw do
+  resources :posts
   get "search/index"
   resources :mails
 
