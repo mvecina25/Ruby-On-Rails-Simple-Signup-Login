@@ -15,4 +15,4 @@ $ rails s
 localhost:3000/login
 ```
 
-> Exam from Maximilian
+> Project for Maximilian
