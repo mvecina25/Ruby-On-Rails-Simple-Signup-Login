@@ -1,10 +1,10 @@
 # Ruby on Rails: Simple Signup and Login
 ## How to run
-1. Download https://github.com/mvecina25/Ruby-On-Rails-Simple-Signup-Login.git and unzip it to C:\Sites\
+1. Download [here](https://github.com/mvecina25/Ruby-On-Rails-Simple-Signup-Login.git) and unzip it to C:\Sites\
 2. Open Command Prompt with Ruby on Rails
 3. Go to
 ```sh
-cd C:\Sites\maximilian_exam
+$ cd C:\Sites\your-project
 ```
 4. Run
 ```sh
